@@ -1,0 +1,15 @@
+.navContainer{
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    justify-content: space-between;
+    border-bottom: black 1px solid;
+    width: 100%;
+    background-color: aqua;
+}
+.navContainer li{
+    width: 200px;
+    background-color: black;
+}
