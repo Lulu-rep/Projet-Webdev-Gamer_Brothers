@@ -1,15 +1,135 @@
-.navContainer{
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+html {
+    animation: fade-in 2s ease 0s 1 normal ;
+}
+
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+body{
+    background-color:#638cb5;
+
+}
+.navcontainer {
     align-items: center;
     display: flex;
     list-style-type: none;
     margin: 0;
     padding: 10px;
     justify-content: space-between;
-    border-bottom: black 1px solid;
+    border-bottom: black 1px groove;
     width: 100%;
-    background-color: aqua;
 }
-.navContainer li{
-    width: 200px;
-    background-color: black;
+
+
+.navcontainer li {
+    padding: 1%;
+    margin: 1%;
+
+
+}
+.navcontainer a{
+    text-transform: uppercase;
+    color: black;
+    text-decoration: None;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 1.2vw;
+
+}
+.space{
+    flex-grow: 4;
+}
+
+.dropbtn {
+    background-color: #2c3e50;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: #2c3e50;
+}
+
+.dropdown-content a:hover {
+    border: 1px #ffffff solid;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+#containerVsemaine{
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 2fr;
+    width: 100%;
+}
+#Vsemaine{
+    background-color: pink;
+    grid-column: 2;
+    grid-row: 1;
+}
+#containerCard{
+    display: grid;
+    list-style-type: none;
+    grid-template-columns:5% 1fr 5% 1fr 5% 1fr 5% 1fr 5%;
+    grid-template-rows: 2fr ;
+}
+#V1{
+    background-color: aqua;
+    grid-column:2 ;
+    grid-row:1 ;
+}
+#V2{
+    background-color: darkgreen;
+    grid-column:4 ;
+    grid-row:1 ;
+}
+#V3{
+    background-color: khaki;
+    grid-column:6 ;
+    grid-row:1 ;
+}
+#V4{
+    background-color: orangered;
+    grid-column:8 ;
+    grid-row:1 ;
+}
+#infoVsemaine{
+    display: none;
+    background-color: red;
+    grid-column:2 ;
+    grid-row: 1;
+}
+#containerVsemaine:hover #infoVsemaine{
+    display: block;
 }

@@ -5,38 +5,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <title>Trouve ton char</title>
     <link rel="stylesheet" href="CSS/accueil.css">
 </head>
 
 <body>
     <nav>
-        <ul id="navContainer">
+        <ul class="navcontainer">
+
             <li>
-                Navbar
+                <a>Trouve ton char : Le site pour vos véhicules</a>
+            </li>
+            <li class="space">
+                <br>
+            </li>
+            <li>
+                <a>
+                    <form class="search">
+                        <fieldset>
+                            <label for="tag" class="label">Vos tags demandés</label> <br>
+                            <select id="tag">
+                                <option value="email">Test</option>
+                            </select> <br>
+                        </fieldset>
+                    </form>
+                </a>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn"> Nous contacter</button>
+                    <div class="dropdown-content">
+                        <a href="HTML/formulaire.html">Formulaire de contact</a>
+                        <a href="https://www.facebook.com">Facebook</a>
+                        <a href="https://www.instagram.com">Instagram</a>
+                    </div>
+                </div>
             </li>
         </ul>
     </nav>
     <div id="containerVsemaine">
-        <div>
+        <div id="Vsemaine">
             Voiture de la semaine
+        </div>
+        <div id="infoVsemaine">
+            Les infos de la voiture de la semaine
         </div>
     </div>
     <div id="containerCard">
-        <ul>
-            <li>
-                voiture 1
-            </li>
-            <li>
-                voiture 2
-            </li>
-            <li>
-                voiture 3
-            </li>
-            <li>
-                voiture 4
-            </li>
-        </ul>
+        <div id="V1">
+            voiture 1
+        </div>
+        <div id="V2">
+            voiture 2
+        </div>
+        <div id="V3">
+            voiture 3
+        </div>
+        <div id="V4">
+            voiture 4
+        </div>
     </div>
 </body>
 
