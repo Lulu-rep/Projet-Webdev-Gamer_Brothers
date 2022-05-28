@@ -63,10 +63,10 @@ h2
 
 }
 
-#image
+img
 {
-  height: 60vh;
-  width: 100vh;
+  height: auto;
+  width: 600px;
 }
 
 .footer
