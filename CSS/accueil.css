@@ -107,7 +107,7 @@ body{
     display: grid;
     list-style-type: none;
     grid-template-columns:5% 1fr 5% 1fr 5% 1fr 5% 1fr 5%;
-    grid-template-rows: 2fr ;
+    grid-template-rows: 2fr 5% 2fr ;
     text-align: center;
 }
 #V1{
@@ -129,6 +129,11 @@ body{
     background-color: orangered;
     grid-column:8 ;
     grid-row:1 ;
+}
+#V5{
+    background-color: blue;
+    grid-column: 4/7;
+    grid-row: 3;
 }
 #infoVsemaine{
     display: none;
