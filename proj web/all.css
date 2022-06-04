@@ -1,0 +1,157 @@
+header{
+	margin-bottom:50px;
+}
+
+div1{
+	justify-content:flex-end;
+   
+}
+
+.form-inline{
+	margin-bottom:15px;
+}
+
+a{
+	font-weight:900;
+}
+
+
+.roi div{
+	padding-left:5px;
+	padding-bottom:80%;
+	
+}
+
+.corps{
+	text-align:center;
+}
+
+.ligneCorps{
+	width: 40%;
+	margin: 0 auto;
+	margin-bottom:50px;
+}
+
+.ligneCorps>h3{
+	margin-bottom:25px;
+	text-decoration: underline;
+}
+
+.btn-primary{
+	margin:15px;
+}
+
+.btn-primary>a{
+	color:black;
+}
+
+.Car{
+	margin-top: 200px;
+}
+
+.row{
+	display:flex;
+	justify-content: space-around;
+}
+
+.card{
+	border:0px
+}
+
+.card-body{
+	width:115px;
+	margin: 0 auto;
+}
+
+.cadreInscription{
+	height: 350px;
+	width: 500px;        
+    border: 5px solid black;
+	margin: 0 auto;
+}
+
+.cadreInscription>img{
+	max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.no-gutters{
+	margin-top:100px;
+	margin-left:100px
+}
+
+.roi>h1{
+	margin-bottom: 50px;
+	margin-left: 150px;
+}
+
+.paris{
+	margin-left: 75px;
+}
+
+label
+{
+	display: block;
+	width: 150px;
+}
+
+footer{
+	background-color:cyan;
+	clear:both;
+    height:100px;
+    position:absolute;
+    bottom:0;
+	width:100%;
+}
+
+footer>p{
+	margin-top:15px;
+	margin-left:50px;
+}
+
+.hassani{
+	text-align:center;
+}
+.dropbtn {
+    background-color: #638cb5;
+    padding: 16px;
+    font-size: 16px;
+    border: solid 1px black;
+    border-radius: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    text-transform: none;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: solid black 1px;
+    border-radius: 15px;
+    background-color: #638cb5;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    border: 1px #ffffff solid;
+    border-radius: 15px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
