@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Accueil</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../fontawesome/css/all.css" rel="stylesheet">
+	<link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="../CSS/all.css" rel="stylesheet" />
+	<link href="../CSS/formulaire.css" rel="stylesheet" />
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-dark bg-primary">
+
+			<a>Trouve ton char : Le site pour vos véhicules les plus improbables</a>
+			<div1>
+				<form class="form-inline">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+				</form>
+				<div class="dropdown" id="advanced">
+					<button class="dropbtn">Recherche avancé</button>
+					<div class="dropdown-content">
+						<label class="label">Type de carburant : </label>
+						<input type="checkbox" id="essence" value="essence">
+						<label for="essence">Voiture essence</label>
+						<input type="checkbox" id="diesel" value="diesel">
+						<label for="diesel">Voiture diesel</label>
+						<input type="checkbox" id="elec" value="electrique">
+						<label for="elec">Voiture electrique</label>
+					</div><br>
+				</div>
+				<button type="button"><a href="">Formulaire de contact</a></button>
+				<button type="button"><a href="https://www.facebook.com">Facebook</a></button>
+				<button type="button"><a href="https://www.instagram.com">Instagram</a></button>
+			</div1>
+
+		</nav>
+	</header>
+	<div id="titre">Nous contacter</div>
+	<div class="form">
+		<form name="contributionform" id="contributionform" method="post" action="">
+			<div>
+				<b>Vous souhaitez nous contacter pour de plus ample informations ?</b><br> <br>
+				Si vous le souhaitez, veuillez remplir le formulaire de contact ci-dessous<br><i
+					class="fas fa-arrow-circle-down"></i>
+			</div>
+			<fieldset id="perso">
+				<label for="nom" class="label_form">Nom
+					<span class="requis">*</span>
+				</label>
+				<input type="text" id="nom" name="nom" required> <br>
+
+				<label for="prenom" class="label_form">Prenom <span class="requis">*</span></label>
+				<input type="text" id="prenom" name="prenom" required> <br>
+
+				<label for="mail" class="label_form"><i class="fas fa-mail-bulk"></i>Adresse Mail <span
+						class="requis">*</span>
+				</label>
+				<input type="email" id="mail" name="mail" required> <br>
+
+				<label for="tel" class="label_form"><i class="fas fa-phone"></i>Numéro de téléphone<span
+						class="requis">*</span></label>
+				<input type="tel" id="tel" name="tel" required> <br>
+
+				<label for="adresse" class="label_form"><i class="fas fa-home"></i>Votre adresse physique <span
+						class="requis">*</span></label>
+				<input type="text" id="adresse" name="adresse" required> <br>
+
+			</fieldset>
+			<fieldset id=article>
+				<label for="moyen" class="label_form">Notre moyen de vous contacter</label>
+				<select id="moyen">
+					<option value="email">Mail</option>
+					<option value="telephone">Telephone</option>
+					<option value="fax">Fax</option>
+				</select> <br>
+
+
+				<label for="content" class="label_form">Votre message : </label>
+				<textarea name="content" rows="5" cols="20" id="message"> </textarea> <br>
+				Les champs avec <span class="requis">*</span> sont obligatoires
+			</fieldset>
+			<div id="bouton">
+				<button type="submit" id="submit">Envoyer </button>
+				<button type="reset" id="reset">Réinitialiser </button>
+			</div>
+		</form>
+	</div>
+	<footer>
+		<p>Sixerr</p>
+		<div class=hassani>
+			<button type="button"><a href="...">Mentions légales et CGU</a></button>
+		</div>
+	</footer>
+</body>
+
+</html>
