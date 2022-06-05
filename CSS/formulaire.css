@@ -18,9 +18,10 @@
 }
 
 .form button {
-    background-color: #1090BA;
+    background-color: #638cb5;
     color: white;
     padding: 14px 20px;
+    border-radius: 10px;
 }
 
 .form button:hover {
@@ -47,9 +48,6 @@
     border-radius: 5px;
     border-style: none;
     background-color: #f2f2f2;
-}
-footer{
-    position:relative;
 }
 .label_form{
     width:100% ;

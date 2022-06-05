@@ -100,7 +100,7 @@ footer{
 	background-color:cyan;
 	clear:both;
     height:100px;
-    position:absolute;
+    position:relative;
     bottom:0;
 	width:100%;
 }
