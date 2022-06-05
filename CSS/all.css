@@ -155,3 +155,6 @@ footer>p{
 .dropdown:hover .dropdown-content {
     display: block;
 }
+#container_map{
+	text-align: center;
+}
