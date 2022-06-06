@@ -11,6 +11,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 	<link href="../CSS/all.css" rel="stylesheet" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<script src="../JS/voiture.js"></script>
 </head>
 
 <body>
@@ -44,9 +45,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 		<iframe
 			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2912.214806882623!2d5.937028125444939!3d43.121013523588275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c91b0a38a90769%3A0x579b897a8766b3f8!2sBurger%20King!5e0!3m2!1sfr!2sfr!4v1654454108646!5m2!1sfr!2sfr"
 			width="640" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-			referrerpolicy="no-referrer-when-downgrade">
+			referrerpolicy="no-referrer-when-downgrade" id="localisation">
 		</iframe>
 	</div>
+	<script>
+		document.addEventListener("load",update_map());
+	</script>
 	<footer>
 		<div class=hassani>
 			<button type="button"><a href="...">Mentions légales et CGU</a></button>

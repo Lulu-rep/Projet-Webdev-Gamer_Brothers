@@ -23,3 +23,7 @@ function recup(){
     }
     document.location.href="HTML/Fiche_voiture.html";
 }
+
+function recupmap(){
+    document.location.href="../HTML/map.html";
+}
