@@ -34,7 +34,7 @@ function update_voiture(){
         nom="Le cyberTruck";
         marque="Tesla";
         moteur="Tri-moteur électrique entre 250 et 300 ch avec entre 400 et 500 Nm de couple";
-        prix="1000€ ";
+        prix="1000€ + 2 pierres pour le nettoyage des vitres";
     }
     document.getElementById("voiture_img").src=img;
     document.getElementById("nom").innerText=nom;
