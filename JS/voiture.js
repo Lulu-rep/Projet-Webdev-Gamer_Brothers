@@ -6,7 +6,7 @@ function update_voiture(){
         nom="Le Panzer IV";
         marque="Krupp";
         moteur="12 cylindre en V de 11.88L de 310ch et 784Nm de couple";
-        prix="5 000€ pour vos envie de conquêtes";
+        prix="5 000€ pour vos envies de conquêtes";
     }
     else if(voiture=="etron"){
         img="../IMG/Etron.jpg";
