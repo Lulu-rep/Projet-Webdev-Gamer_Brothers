@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-		<link href="all3.css" rel="stylesheet" />
-		<link href="../CSS/Carrousel.css" rel="stylesheet"/>
+		<link href="../CSS/all3.css" rel="stylesheet" />
+        <script src="../JS/voiture.js"></script>
     </head>
     <body>
         <header>
@@ -40,10 +40,9 @@
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-	  <div id="descriptionService">
-            <img src="" alt=""/>
+	  <div id="Img_Voiture">
+            <img src="../IMG/cybertruck.jpg" id="voiture_img"/>
             <br/>
-            <p>Image de la voiture: (modifiable en js)</p>
         </div>
 		</div>
 		</div>
@@ -53,11 +52,11 @@
     <div class="card">
       <div class="card-body">
 	  <div id="infosService">
-            <h1 id="TitreService">Nom voiture (modifiable en js)</h1>
-            <div>Marque de la voiture <p id="Temps">(modifiable en js)</p></div>
-            <div>Type de moteur <p id="Notes">(modifiable en js)</p></div>
+            <h1 id="nom">Nom voiture</h1>
+            <div>Marque de la voiture :  <p id="marque">(modifiable en js)</p></div>
+            <div>Type de moteur :  <p id="moteur">(modifiable en js)</p></div>
             <br/>
-            <div id="Prix">(modifiable en js)</div>
+            <div>Prix : <p id="prix">placeholder</p></div>
         </div>
         <br/>
         <br/>
@@ -69,10 +68,12 @@
 		</div>
 		</div>
 		</div5>
+        <script>
+            document.addEventListener("load",update_voiture());
+        </script>
 		</body>
 		<footer>
         <div3 class=bilal>
-            <p>Trouve ton char</p> 
             <div class=hassani>
 				 <button type="button" ><a href="...">Mentions légales et CGU</a></button>
 			</div>

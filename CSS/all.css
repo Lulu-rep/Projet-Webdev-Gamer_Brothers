@@ -158,3 +158,8 @@ footer>p{
 #container_map{
 	text-align: center;
 }
+#bouton_recup{
+	border-radius: 10px;
+	background-color: #638cb5;
+	color: white;
+}

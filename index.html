@@ -1,67 +1,89 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Accueil</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-		<link href="CSS/all.css" rel="stylesheet" />
-		<link href="CSS/Carrousel.css" rel="stylesheet"/>
-    </head>
-    <body>
-        <header>
-			<nav class="navbar navbar-dark bg-primary">
-			
-				<a>Trouve ton char : Le site pour vos véhicules les plus improbables</a>
-				<div1>
-					<form class="form-inline">
-						<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-						<button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
-					</form>
-						<div class="dropdown" id="advanced">
-                                <button class="dropbtn">Recherche avancé</button>
-                                <div class="dropdown-content">
-                                    <label class="label">Type de carburant : </label> 
-                                    <label for="essence"><input type="checkbox" id="essence" value="essence">Voiture essence</label>
-                                    <label for="diesel"><input type="checkbox" id="diesel" value="diesel">Voiture diesel</label>
-                                    <label for="elec"><input type="checkbox" id="elec" value="electrique">Voiture electrique</label> 
-                                    
-                                </div><br>
-						</div>
-						<button type="button" ><a href="HTML/formulaire.html">Formulaire de contact</a></button>
-						<button type="button" ><a href="https://www.facebook.com">Facebook</a></button>
-						<button type="button" ><a href="https://www.instagram.com">Instagram</a></button>
-				</div1>
-				
-			</nav>
-		</header>
-        <div class=" corps">
-            <div class="ligneCorps">
-                <h3>Recherche par centre d'intérêt :</h3>
-                <div class="centreInter">
-					    
-					<input type="radio" name="position" checked />
-					<input type="radio" name="position" />
-					<input type="radio" name="position" />
-					<input type="radio" name="position" />
-					<input type="radio" name="position" />
-					<main id="carousel">
-					<div class="item"><a href="presentation%20serv.html"><img src="IMG/tank.jpg" class="card-img-bottom" alt="..."></div>
-					<div class="item"> <a href="presentation%20serv.html"><img src="IMG/cybertruck.jpg" class="card-img-bottom" alt="..."></div>
-					<div class="item"> <a href="presentation%20serv.html"><img src="IMG/Etron.jpg" class="card-img-bottom" alt="..."></div>
-					<div class="item"><a href="presentation%20serv.html"><img src="IMG/multipla.jpg" class="card-img-bottom" alt=".."></div>
-					<div class="item"><a href="presentation%20serv.html"><img src="IMG/ouioui.png" class="card-img-bottom" alt=".."></div>
+
+<head>
+	<title>Accueil</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="CSS/all.css" rel="stylesheet" />
+	<link href="CSS/Carrousel.css" rel="stylesheet" />
+	<script src="JS/recup.js"></script>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-dark bg-primary">
+
+			<a>Trouve ton char : Le site pour vos véhicules les plus improbables</a>
+			<div1>
+				<form class="form-inline">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+				</form>
+				<div class="dropdown" id="advanced">
+					<button class="dropbtn">Recherche avancé</button>
+					<div class="dropdown-content">
+						<label class="label">Type de carburant : </label>
+						<label for="essence"><input type="checkbox" id="essence" value="essence">Voiture essence</label>
+						<label for="diesel"><input type="checkbox" id="diesel" value="diesel">Voiture diesel</label>
+						<label for="elec"><input type="checkbox" id="elec" value="electrique">Voiture electrique</label>
+
+					</div><br>
+				</div>
+				<button type="button"><a href="HTML/formulaire.html">Formulaire de contact</a></button>
+				<button type="button"><a href="https://www.facebook.com">Facebook</a></button>
+				<button type="button"><a href="https://www.instagram.com">Instagram</a></button>
+			</div1>
+
+		</nav>
+	</header>
+	<div class=" corps">
+		<div class="ligneCorps">
+			<h3>Recherche par centre d'intérêt :</h3>
+			<div class="centreInter">
+
+				<input type="radio" name="position" checked value="tank"/>
+				<input type="radio" name="position" value="cybertruck"/>
+				<input type="radio" name="position" value="etron"/>
+				<input type="radio" name="position" value="multipla"/>
+				<input type="radio" name="position" value="ouioui"/>
+				<main id="carousel">
+					<div class="item">
+						<a href="presentation%20serv.html">
+							<img src="IMG/tank.jpg" class="card-img-bottom" alt="...">
+						</a>
 					</div>
-					</main>
-				</div>
-		
-				</div>
+					<div class="item">
+						<a href="presentation%20serv.html">
+							<img src="IMG/cybertruck.jpg" class="card-img-bottom" alt="...">
+						</a>
+					</div>
+					<div class="item">
+						<a href="presentation%20serv.html">
+							<img src="IMG/Etron.jpg" class="card-img-bottom" alt="...">
+						</a>
+					</div>
+					<div class="item">
+						<a href="presentation%20serv.html">
+							<img src="IMG/multipla.jpg" class="card-img-bottom" alt="..">
+						</a>
+					</div>
+					<div class="item">
+						<a href="presentation%20serv.html">
+							<img src="IMG/ouioui.png" class="card-img-bottom" alt="..">
+						</a>
+					</div>
+				</main>
+				<button onclick="recup()" id="bouton_recup">Afficher la fiche d'info de la voiture sélectionné</button>
 			</div>
 		</div>
-		<footer> 
-			<div class=hassani>
-				<button type="button" ><a href="...">Mentions légales et CGU</a></button>
-			</div>
-		</footer>
-    </body>
+	</div>
+	<footer>
+		<div class=hassani>
+			<button type="button"><a href="...">Mentions légales et CGU</a></button>
+		</div>
+	</footer>
+</body>
+
 </html>
